@@ -1,0 +1,64 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Arquivos compilados e de build
+*.class
+*.jar
+*.war
+*.ear
+
+# Configurações do IntelliJ IDEA
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Configurações do Eclipse
+/.settings/
+/.metadata/
+/.classpath
+/.project
+/bin/
+/target/
+
+# Configurações do VSCode
+/.vscode/
+
+# Arquivos do Maven e Gradle
+/.mvn/
+/.gradle/
+/build/
+
+# Arquivos de log
+*.log
+*.out
+*.err
+
+# Arquivos do SQLite
+*.sqlite
+*.db
+*.db-wal
+*.db-shm
+
+# Credenciais e configurações sensíveis
+*.keystore
+*.jks
+*.pem
+*.p12
+*.crt
+*.key
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+~$*
+
+# Arquivos de credenciais e variáveis de ambiente
+.env
+*.env.local
+secrets.json
+
+# Dumps e backups
+*.sql
+dump.sql
+*.bak

@@ -34,7 +34,12 @@ public class DeletarUsuario implements Funcao {
 
 
         PreparedStatement checkUser = conn.prepareStatement("SELECT * FROM clientes WHERE nome = ? AND cpf = ?");
+        checkUser.setString(1, name);
+        checkUser.setLong(2, cpf);
+
         ResultSet rs = checkUser.executeQuery();
+
+
 
         while (rs.next()){
             System.out.println("Nome: " + rs.getString("nome"));

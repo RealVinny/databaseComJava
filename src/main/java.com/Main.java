@@ -2,6 +2,7 @@ package main.java.com;
 import main.java.com.functions.delete.DeletarUsuario;
 import main.java.com.functions.lookup.*;
 import main.java.com.functions.register.CadastrarUsuario;
+import main.java.com.functions.update.AtualizarUsuario;
 
 import java.sql.*;
 import java.awt.*;
@@ -17,6 +18,8 @@ public class Main{
         CadastrarUsuario cadUser = new CadastrarUsuario();
         ConsultarUsuario conUser = new ConsultarUsuario();
         DeletarUsuario delUser = new DeletarUsuario();
+        AtualizarUsuario atUser = new AtualizarUsuario();
+
 
         /*
 
@@ -34,10 +37,8 @@ public class Main{
 
         try ( Connection connection = DriverManager.getConnection(path)){
 
-            conUser.consultar(connection);
-            delUser.deletar(connection);
 
-            connection.close();
+
 
         } catch (SQLException e) {
             System.out.println("ERRO AO CONECTAR AO BANCO DE DADOS" );
